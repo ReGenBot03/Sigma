@@ -1,0 +1,11 @@
+file_format: "1"
+id: sigma
+name: Sigma
+type: shield
+url: https://github.com/ReGenBot03
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - sigma_left
+  - sigma_right
