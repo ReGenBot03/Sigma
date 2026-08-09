@@ -6,6 +6,7 @@ url: https://github.com/ReGenBot03
 requires: [seeeduino_xiao_ble]
 features:
   - keys
+  - studio
 siblings:
   - sigma_left
   - sigma_right
