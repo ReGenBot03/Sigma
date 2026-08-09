@@ -4,6 +4,141 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    macros {
+        CN_01: CN_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_9 &kt LEFT_ALT &kp KP_NUMLOCK>;
+            label = "CN_1";
+        };
+
+        CN_02: CN_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_9 &kt LEFT_ALT &kp KP_NUMLOCK>;
+            label = "CN_2";
+        };
+
+        CN_03: CN_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_9 &kt LEFT_ALT &kp KP_NUMLOCK>;
+            label = "CN_3";
+        };
+
+        CN_04: CN_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_9 &kt LEFT_ALT &kp KP_NUMLOCK>;
+            label = "CN_4";
+        };
+
+        CN_05: CN_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_9 &kt LEFT_ALT &kp KP_NUMLOCK>;
+            label = "CN_5";
+        };
+
+        CN_06: CN_6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_9 &kt LEFT_ALT &kp KP_NUMLOCK>;
+            label = "CN_6";
+        };
+
+        CN_07: CN_7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_9 &kt LEFT_ALT &kp KP_NUMLOCK>;
+            label = "CN_7";
+        };
+
+        CN_08: CN_8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_9 &kt LEFT_ALT &kp KP_NUMLOCK>;
+            label = "CN_8";
+        };
+
+        CN_09: CN_9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_9 &kt LEFT_ALT &kp KP_NUMLOCK>;
+            label = "CN_9";
+        };
+
+        CN_10: CN_10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_9 &kt LEFT_ALT &kp KP_NUMLOCK>;
+            label = "CN_10";
+        };
+
+        M_BR: M_BR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
+            label = "M_BR";
+        };
+
+        M_SQ: M_SQ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT &kp LEFT>;
+            label = "M_SQ";
+        };
+
+        M_HP: M_HP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp MINUS &kp SPACE>;
+            label = "M_HP";
+        };
+
+        M_CL: M_CL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp COLON &kp SPACE>;
+            label = "M_CL";
+        };
+
+        M_CP: M_CP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F2 &kt LC(C) &kp ESCAPE>;
+            label = "M_CP";
+        };
+
+        M_PT: M_PT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F2 &kp LC(V) &kp ENTER>;
+            label = "M_PT";
+        };
+
+        M_SP: M_SA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE>;
+            label = "M_SA";
+        };
+
+        SC_A: SC_A {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_7 &kt LEFT_ALT &kp KP_NUMLOCK>;
+            label = "SC_A";
+        };
+
+        SC_S: SC_S {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_8 &kp KP_NUMBER_2 &kt LEFT_ALT &kp KP_NUMLOCK>;
+            label = "SC_S";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
