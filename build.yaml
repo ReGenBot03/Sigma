@@ -1,9 +1,9 @@
 include:
-  - board: xiao_ble//zmk
+  - board: seeeduino_xiao_ble
     shield: sigma_left rgbled_adapter
     snippet: zmk-usb-logging
-  - board: xiao_ble//zmk
+  - board: seeeduino_xiao_ble
     shield: sigma_right rgbled_adapter
     snippet: zmk-usb-logging
-  - board: xiao_ble//zmk
+  - board: seeeduino_xiao_ble
     shield: settings_reset
