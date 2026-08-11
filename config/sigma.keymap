@@ -117,18 +117,18 @@
             label = "M_CL";
         };
 
-        M_COPY: M_CP {
+        M_COPY: M_COPY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F2 &kt LC(C) &kp ESCAPE>;
-            label = "M_CP";
+            label = "M_COPY";
         };
 
-        M_PASTE: M_PT {
+        M_PASTE: M_PASTE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F2 &kp LC(V) &kp ENTER>;
-            label = "M_PT";
+            label = "M_PASTE";
         };
 
         M_UB: M_UB {
