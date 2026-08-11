@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     macros {
@@ -295,10 +296,10 @@
         raise_layer {
             display-name = "RSE";
             bindings = <
-&kp LA(GRAVE)      &kp N7  &kp N8   &kp N9     &kp C_VOL_DN  &kp C_VOL_UP  &kp PAGE_DOWN  &kp PAGE_UP       &trans             &trans          &trans           &trans
-&kp KP_NLCK        &kp N4  &kp N5   &kp N6     &M_P1         &M_P2         &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
-&trans             &kp N1  &kp N2   &kp N3     &M_BR         &M_SQ         &M_HP          &kp MINUS         &kp PLUS           &kp EQUAL       &kp SQT          &trans
-&kp RIGHT_CONTROL  &kp N0  &kp DOT  &kp ENTER  &M_CP         &M_PT         &M_CL          &kp LESS_THAN     &kp GREATER_THAN   &kp COMMA       &kp BSLH         &trans
+&kp LA(GRAVE)      &kp N7  &kp N8   &kp N9     &kp C_VOL_DN  &kp C_VOL_UP  &kp PAGE_DOWN  &kp PAGE_UP       &msc SCRL_LEFT     &msc SCRL_RIGHT  &trans           &trans
+&kp KP_NLCK        &kp N4  &kp N5   &kp N6     &M_P1         &M_P2         &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE   &kp RIGHT_BRACE  &trans
+&trans             &kp N1  &kp N2   &kp N3     &M_BR         &M_SQ         &M_HP          &kp MINUS         &kp PLUS           &kp EQUAL        &kp SQT          &trans
+&kp RIGHT_CONTROL  &kp N0  &kp DOT  &kp ENTER  &M_CP         &M_PT         &M_CL          &kp LESS_THAN     &kp GREATER_THAN   &kp COMMA        &kp BSLH         &trans
                                                &kp F2        &trans        &kp C_MUTE     &kp LG(DOT)
             >;
         };
@@ -319,7 +320,7 @@
             bindings = <
 &kp LA(GRAVE)   &CN_01     &CN_02  &CN_03  &CN_04  &CN_05  &CN_06  &CN_07  &CN_08   &CN_09   &CN_10   &trans
 &trans          &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans   &SC_O    &SC_PM   &trans
-&trans          &SC_A      &SC_S   &SC_D   &trans  &trans  &SC_H   &trans  &trans   &trans   &SC_DOT  &SC_RR
+&studio_unlock  &SC_A      &SC_S   &SC_D   &trans  &trans  &SC_H   &trans  &trans   &trans   &SC_DOT  &SC_RR
 &bt BT_CLR_ALL  &kp GRAVE  &trans  &SC_X   &SC_C   &SC_V   &SC_LB  &SC_RB  &SC_LFT  &SC_DWN  &SC_UP   &SC_RGT
                                            &M_SP   &trans  &trans  &M_SP
             >;
