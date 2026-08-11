@@ -4,6 +4,20 @@
 
 / {
     macros {
+        M_P1: M_P1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp I &kp S &kp E &kp N &kp O &kp M &kp O &kp N &kp O &kp AT &kp N &kp A &kp V &kp E &kp R &kp DOT &kp C &kp O &kp M>;
+            label = "M_P1";
+        };
+
+        M_P2: M_P2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(R) &kp E &kp LS(G) &kp E &kp N &kp LS(B) &kp O &kp T &kp N0 &kp N3>;
+            label = "M_P2";
+        };
+
         CN_01: CN_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -135,20 +149,6 @@
             #binding-cells = <0>;
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_8 &kp KP_NUMBER_2 &kt LEFT_ALT &kp KP_NUMLOCK>;
             label = "SC_S";
-        };
-
-        M_P1: M_P1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N &kp I &kp S &kp E &kp N &kp O &kp M &kp O &kp N &kp O &kp AT &kp N &kp A &kp V &kp E &kp R &kp DOT &kp C &kp O &kp M>;
-            label = "M_P1";
-        };
-
-        M_P2: M_P2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(R) &kp E &kp LS(G) &kp E &kp N &kp LS(B) &kp O &kp T &kp N0 &kp N3>;
-            label = "M_P2";
         };
 
         SC_C: SC_C {
