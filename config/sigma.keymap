@@ -117,14 +117,14 @@
             label = "M_CL";
         };
 
-        M_CP: M_CP {
+        M_COPY: M_CP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F2 &kt LC(C) &kp ESCAPE>;
             label = "M_CP";
         };
 
-        M_PT: M_PT {
+        M_PASTE: M_PT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F2 &kp LC(V) &kp ENTER>;
@@ -299,7 +299,7 @@
 &kp LA(GRAVE)      &kp N7  &kp N8   &kp N9     &kp C_VOL_DN  &kp C_VOL_UP  &kp PAGE_DOWN  &kp PAGE_UP       &msc SCRL_LEFT     &msc SCRL_RIGHT  &trans           &trans
 &kp KP_NLCK        &kp N4  &kp N5   &kp N6     &M_P1         &M_P2         &SC_DDOT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE   &kp RIGHT_BRACE  &trans
 &trans             &kp N1  &kp N2   &kp N3     &M_BR         &M_SQ         &M_HP          &kp MINUS         &kp PLUS           &kp EQUAL        &kp SQT          &trans
-&kp RIGHT_CONTROL  &kp N0  &kp DOT  &kp ENTER  &M_CP         &M_PT         &M_CL          &kp LESS_THAN     &kp GREATER_THAN   &kp COMMA        &kp BSLH         &trans
+&kp RIGHT_CONTROL  &kp N0  &kp DOT  &kp ENTER  &M_COPY       &M_PASTE      &M_CL          &kp LESS_THAN     &kp GREATER_THAN   &kp COMMA        &kp BSLH         &trans
                                                &kp F2        &trans        &kp C_MUTE     &kp LG(DOT)
             >;
         };
