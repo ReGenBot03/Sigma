@@ -137,6 +137,20 @@
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_8 &kp KP_NUMBER_2 &kt LEFT_ALT &kp KP_NUMLOCK>;
             label = "SC_S";
         };
+
+        M_P1: M_P1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp I &kp S &kp E &kp N &kp O &kp M &kp O &kp N &kp O &kp AT &kp N &kp A &kp V &kp E &kp R &kp DOT &kp C &kp O &kp M>;
+            label = "M_P1";
+        };
+
+        M_P2: M_P2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(R) &kp E &kp LS(G) &kp E &kp N &kp LS(B) &kp O &kp T &kp N0 &kp N3>;
+            label = "M_P2";
+        };
     };
 
     keymap {
@@ -145,28 +159,44 @@
         default_layer {
             display-name = "QRT";
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC  &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp DEL  &kp LSHFT  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp RET  &kp LCTRL  &kp LALT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp DOT  &kp FSLH  &kp RSHFT  &kp SPACE  &lt 1 LEFT_GUI  &lt 2 RIGHT_ALT  &kp SPACE
+&kp ESC    &kp N1    &kp N2  &kp N3  &kp N4     &kp N5          &kp N6           &kp N7     &kp N8  &kp N9   &kp N0    &kp BSPC
+&kp TAB    &kp Q     &kp W   &kp E   &kp R      &kp T           &kp Y            &kp U      &kp I   &kp O    &kp P     &kp DEL
+&kp LSHFT  &kp A     &kp S   &kp D   &kp F      &kp G           &kp H            &kp J      &kp K   &kp L    &kp SEMI  &kp RET
+&kp LCTRL  &kp LALT  &kp Z   &kp X   &kp C      &kp V           &kp B            &kp N      &kp M   &kp DOT  &kp FSLH  &kp RSHFT
+                                     &kp SPACE  &lt 1 LEFT_GUI  &lt 2 RIGHT_ALT  &kp SPACE
             >;
         };
 
         raise_layer {
             display-name = "RSE";
             bindings = <
-&bt BT_CLR  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &out OUT_TOG  &trans  &trans  &trans  &M_CP  &M_PT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR      &kp N7  &kp N8   &kp N9     &kp C_VOL_DN  &kp C_VOL_UP  &kp PAGE_DOWN  &kp PAGE_UP       &trans             &trans          &trans           &trans
+&studio_unlock  &kp N4  &kp N5   &kp N6     &M_P1         &M_P2         &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+&trans          &kp N1  &kp N2   &kp N3     &M_BR         &M_SQ         &M_HP          &kp MINUS         &kp PLUS           &kp EQUAL       &kp SQT          &trans
+&out OUT_TOG    &kp N0  &kp DOT  &kp ENTER  &M_CP         &M_PT         &M_CL          &kp LESS_THAN     &kp GREATER_THAN   &kp COMMA       &kp BSLH         &trans
+                                            &kp F2        &trans        &kp C_MUTE     &kp LG(DOT)
             >;
         };
 
         lower_layer {
             display-name = "LWR";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F1    &kp F2  &kp F3  &kp F4  &kp F5         &kp F6           &kp F7         &kp F8         &kp F9         &kp F10            &kp F11    &kp F12
+&kp CAPS  &trans  &trans  &trans  &trans         &trans           &kp LC(LA(G))  &kp LC(LA(S))  &kp LC(LS(I))  &kp LC(LS(C))      &kp LA(E)  &trans
+&trans    &trans  &trans  &trans  &trans         &trans           &kp LS(F6)     &kp LS(F5)     &kp LC(M)      &kp LC(LA(LS(B)))  &trans     &trans
+&trans    &trans  &trans  &trans  &trans         &trans           &kp LC(LS(S))  &kp LS(MINUS)  &kp LEFT       &kp DOWN           &kp UP     &kp RIGHT
+                                  &kp LG(LS(S))  &kp PRINTSCREEN  &trans         &kp RIGHT_ALT
             >;
         };
 
         symbol_layer {
             display-name = "SBL";
             bindings = <
-&kp LA(GRAVE)  &CN_01  &CN_02  &CN_03  &CN_04  &CN_05  &CN_06  &CN_07  &CN_08  &CN_09  &CN_10  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &M_SP
+&kp LA(GRAVE)   &CN_01  &CN_02  &CN_03  &CN_04  &CN_05  &CN_06  &CN_07  &CN_08  &CN_09  &CN_10  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans  &trans  &trans  &trans
             >;
         };
     };
