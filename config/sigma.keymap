@@ -123,17 +123,17 @@
             label = "M_CP";
         };
 
-        M_UB: M_PT {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT &kp LS(MINUS)>;
-            label = "M_PT";
-        };
-
-        M_PT: M_UB {
+        M_PT: M_PT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F2 &kp LC(V) &kp ENTER>;
+            label = "M_PT";
+        };
+
+        M_UB: M_UB {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT &kp LS(MINUS)>;
             label = "M_PT";
         };
 
@@ -298,7 +298,7 @@
 &kp LA(GRAVE)      &kp N7  &kp N8   &kp N9     &kp C_VOL_DN  &kp C_VOL_UP  &kp PAGE_DOWN  &kp PAGE_UP       &trans             &trans          &trans           &trans
 &kp KP_NLCK        &kp N4  &kp N5   &kp N6     &M_P1         &M_P2         &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
 &trans             &kp N1  &kp N2   &kp N3     &M_BR         &M_SQ         &M_HP          &kp MINUS         &kp PLUS           &kp EQUAL       &kp SQT          &trans
-&kp RIGHT_CONTROL  &kp N0  &kp DOT  &kp ENTER  &M_CP         &M_UB         &M_CL          &kp LESS_THAN     &kp GREATER_THAN   &kp COMMA       &kp BSLH         &trans
+&kp RIGHT_CONTROL  &kp N0  &kp DOT  &kp ENTER  &M_CP         &M_PT         &M_CL          &kp LESS_THAN     &kp GREATER_THAN   &kp COMMA       &kp BSLH         &trans
                                                &kp F2        &trans        &kp C_MUTE     &kp LG(DOT)
             >;
         };
@@ -309,7 +309,7 @@
 &kp F1    &kp F2  &kp F3  &kp F4  &kp F5         &kp F6           &kp F7         &kp F8         &kp F9         &kp F10            &kp F11    &kp F12
 &kp CAPS  &trans  &trans  &trans  &trans         &trans           &kp LC(LA(G))  &kp LC(LA(S))  &kp LC(LS(I))  &kp LC(LS(C))      &kp LA(E)  &trans
 &trans    &trans  &trans  &trans  &trans         &trans           &kp LS(F6)     &kp LS(F5)     &kp LC(M)      &kp LC(LA(LS(B)))  &trans     &kp LA(ENTER)
-&trans    &trans  &trans  &trans  &trans         &trans           &kp LC(LS(S))  &kp LS(MINUS)  &kp LEFT       &kp DOWN           &kp UP     &kp RIGHT
+&trans    &trans  &trans  &trans  &trans         &trans           &kp LC(LS(S))  &M_UB          &kp LEFT       &kp DOWN           &kp UP     &kp RIGHT
                                   &kp LG(LS(S))  &kp PRINTSCREEN  &trans         &kp RIGHT_ALT
             >;
         };
