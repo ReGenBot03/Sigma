@@ -19,67 +19,67 @@
             label = "M_P2";
         };
 
-        CN_01: CN_1 {
+        CN_01: CN_01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_9 &kt LEFT_ALT &kp KP_NUMLOCK>;
-            label = "CN_1";
+            label = "CN_01";
         };
 
-        CN_02: CN_2 {
+        CN_02: CN_02 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_0 &kt LEFT_ALT &kp KP_NUMLOCK>;
-            label = "CN_2";
+            label = "CN_02";
         };
 
-        CN_03: CN_3 {
+        CN_03: CN_03 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_1 &kt LEFT_ALT &kp KP_NUMLOCK>;
-            label = "CN_3";
+            label = "CN_03";
         };
 
-        CN_04: CN_4 {
+        CN_04: CN_04 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_2 &kt LEFT_ALT &kp KP_NUMLOCK>;
-            label = "CN_4";
+            label = "CN_04";
         };
 
-        CN_05: CN_5 {
+        CN_05: CN_05 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kt LEFT_ALT &kp KP_NUMLOCK>;
-            label = "CN_5";
+            label = "CN_05";
         };
 
-        CN_06: CN_6 {
+        CN_06: CN_06 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_4 &kt LEFT_ALT &kp KP_NUMLOCK>;
-            label = "CN_6";
+            label = "CN_06";
         };
 
-        CN_07: CN_7 {
+        CN_07: CN_07 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kt LEFT_ALT &kp KP_NUMLOCK>;
-            label = "CN_7";
+            label = "CN_07";
         };
 
-        CN_08: CN_8 {
+        CN_08: CN_08 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_6 &kt LEFT_ALT &kp KP_NUMLOCK>;
-            label = "CN_8";
+            label = "CN_08";
         };
 
-        CN_09: CN_9 {
+        CN_09: CN_09 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_7 &kt LEFT_ALT &kp KP_NUMLOCK>;
-            label = "CN_9";
+            label = "CN_09";
         };
 
         CN_10: CN_10 {
@@ -117,32 +117,32 @@
             label = "M_CL";
         };
 
-        M_COPY: M_COPY {
+        M_CP: M_CP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F2 &kt LC(C) &kp ESCAPE>;
-            label = "M_COPY";
+            label = "M_CP";
         };
 
-        M_PASTE: M_PASTE {
+        M_PT: M_PT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F2 &kp LC(V) &kp ENTER>;
-            label = "M_PASTE";
+            label = "M_PT";
         };
 
         M_UB: M_UB {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RIGHT &kp LS(MINUS)>;
-            label = "M_PT";
+            label = "M_UB";
         };
 
-        M_SP: M_SA {
+        M_SP: M_SP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE>;
-            label = "M_SA";
+            label = "M_SP";
         };
 
         SC_A: SC_A {
@@ -229,18 +229,18 @@
             label = "SC_RR";
         };
 
-        SC_LFT: SC_LEFT {
+        SC_LFT: SC_LFT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_4 &kp KP_NUMBER_7 &kt LEFT_ALT &kp KP_NUMLOCK>;
-            label = "SC_LEFT";
+            label = "SC_LFT";
         };
 
-        SC_RGT: SC_RGHT {
+        SC_RGT: SC_RGT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp KP_NUMLOCK &kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_4 &kp KP_NUMBER_6 &kt LEFT_ALT &kp KP_NUMLOCK>;
-            label = "SC_RGHT";
+            label = "SC_RGT";
         };
 
         SC_UP: SC_UP {
@@ -299,7 +299,7 @@
 &kp LA(GRAVE)      &kp N7  &kp N8   &kp N9     &kp C_VOL_DN  &kp C_VOL_UP  &kp PAGE_DOWN  &kp PAGE_UP       &msc SCRL_LEFT     &msc SCRL_RIGHT  &trans           &trans
 &kp KP_NLCK        &kp N4  &kp N5   &kp N6     &M_P1         &M_P2         &SC_DDOT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE   &kp RIGHT_BRACE  &trans
 &trans             &kp N1  &kp N2   &kp N3     &M_BR         &M_SQ         &M_HP          &kp MINUS         &kp PLUS           &kp EQUAL        &kp SQT          &trans
-&kp RIGHT_CONTROL  &kp N0  &kp DOT  &kp ENTER  &M_COPY       &M_PASTE      &M_CL          &kp LESS_THAN     &kp GREATER_THAN   &kp COMMA        &kp BSLH         &trans
+&kp RIGHT_CONTROL  &kp N0  &kp DOT  &kp ENTER  &M_CP         &M_PT         &M_CL          &kp LESS_THAN     &kp GREATER_THAN   &kp COMMA        &kp BSLH         &trans
                                                &kp F2        &trans        &kp C_MUTE     &kp LG(DOT)
             >;
         };
