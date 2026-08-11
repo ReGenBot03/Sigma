@@ -126,6 +126,13 @@
         M_PT: M_PT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            bindings = <&kp LEFT &kp LS(MINUS)>;
+            label = "M_PT";
+        };
+
+        M_PT: M_UB {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings = <&kp F2 &kp LC(V) &kp ENTER>;
             label = "M_PT";
         };
