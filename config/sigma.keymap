@@ -318,11 +318,11 @@
         symbol_layer {
             display-name = "SBL";
             bindings = <
-&kp LA(GRAVE)   &CN_01     &CN_02  &CN_03  &CN_04  &CN_05  &CN_06  &CN_07  &CN_08   &CN_09   &CN_10   &trans
-&trans          &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans   &SC_O    &SC_PM   &trans
-&studio_unlock  &SC_A      &SC_S   &SC_D   &trans  &trans  &SC_H   &trans  &trans   &trans   &SC_DOT  &SC_RR
-&bt BT_CLR_ALL  &kp GRAVE  &trans  &SC_X   &SC_C   &SC_V   &SC_LB  &SC_RB  &SC_LFT  &SC_DWN  &SC_UP   &SC_RGT
-                                           &M_SP   &trans  &trans  &M_SP
+&kp LA(GRAVE)   &CN_01      &CN_02      &CN_03  &CN_04  &CN_05  &CN_06  &CN_07  &CN_08   &CN_09   &CN_10   &trans
+&trans          &bt BT_PRV  &bt BT_NXT  &trans  &trans  &trans  &trans  &trans  &trans   &SC_O    &SC_PM   &trans
+&bt BT_CLR      &SC_A       &SC_S       &SC_D   &trans  &trans  &SC_H   &trans  &trans   &trans   &SC_DOT  &SC_RR
+&bt BT_CLR_ALL  &kp GRAVE   &trans      &SC_X   &SC_C   &SC_V   &SC_LB  &SC_RB  &SC_LFT  &SC_DWN  &SC_UP   &SC_RGT
+                                                &M_SP   &trans  &trans  &M_SP
             >;
         };
     };
