@@ -296,7 +296,7 @@
         raise_layer {
             display-name = "RSE";
             bindings = <
-&kp LA(GRAVE)      &kp N7  &kp N8   &kp N9     &kp C_VOL_DN  &kp C_VOL_UP  &kp PAGE_DOWN  &kp PAGE_UP       &msc SCRL_LEFT     &msc SCRL_RIGHT  &trans           &trans
+&kp GRAVE          &kp N7  &kp N8   &kp N9     &kp C_VOL_DN  &kp C_VOL_UP  &kp PAGE_DOWN  &kp PAGE_UP       &msc SCRL_LEFT     &msc SCRL_RIGHT  &trans           &trans
 &kp KP_NLCK        &kp N4  &kp N5   &kp N6     &M_P1         &M_P2         &SC_DDOT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE   &kp RIGHT_BRACE  &trans
 &trans             &kp N1  &kp N2   &kp N3     &M_BR         &M_SQ         &M_HP          &kp MINUS         &kp PLUS           &kp EQUAL        &kp SQT          &trans
 &kp RIGHT_CONTROL  &kp N0  &kp DOT  &kp ENTER  &M_CP         &M_PT         &M_CL          &kp LESS_THAN     &kp GREATER_THAN   &kp COMMA        &kp BSLH         &trans
@@ -307,22 +307,22 @@
         lower_layer {
             display-name = "LWR";
             bindings = <
-&kp F1    &kp F2  &kp F3  &kp F4  &kp F5         &kp F6           &kp F7         &kp F8         &kp F9         &kp F10            &kp F11    &kp F12
-&kp CAPS  &trans  &trans  &trans  &trans         &trans           &kp LC(LA(G))  &kp LC(LA(S))  &kp LC(LS(I))  &kp LC(LS(C))      &kp LA(E)  &trans
-&trans    &trans  &trans  &trans  &trans         &trans           &kp LS(F6)     &kp LS(F5)     &kp LC(M)      &kp LC(LA(LS(B)))  &trans     &kp LA(ENTER)
-&trans    &trans  &trans  &trans  &trans         &trans           &kp LC(LS(S))  &M_UB          &kp LEFT       &kp DOWN           &kp UP     &kp RIGHT
-                                  &kp LG(LS(S))  &kp PRINTSCREEN  &trans         &kp RIGHT_ALT
+&kp F1          &kp F2      &kp F3      &kp F4  &kp F5         &kp F6           &kp F7         &kp F8         &kp F9         &kp F10            &kp F11    &kp F12
+&kp CAPS        &trans      &trans      &trans  &trans         &trans           &kp LC(LA(G))  &kp LC(LA(S))  &kp LC(LS(I))  &kp LC(LS(C))      &kp LA(E)  &trans
+&bt BT_CLR      &trans      &trans      &trans  &trans         &trans           &kp LS(F6)     &kp LS(F5)     &kp LC(M)      &kp LC(LA(LS(B)))  &trans     &kp LA(ENTER)
+&bt BT_CLR_ALL  &bt BT_PRV  &bt BT_NXT  &trans  &trans         &trans           &kp LC(LS(S))  &M_UB          &kp LEFT       &kp DOWN           &kp UP     &kp RIGHT
+                                                &kp LG(LS(S))  &kp PRINTSCREEN  &trans         &kp RIGHT_ALT
             >;
         };
 
         symbol_layer {
             display-name = "SBL";
             bindings = <
-&kp LA(GRAVE)   &CN_01      &CN_02      &CN_03  &CN_04  &CN_05  &CN_06  &CN_07  &CN_08   &CN_09   &CN_10   &trans
-&trans          &bt BT_PRV  &bt BT_NXT  &trans  &trans  &trans  &trans  &trans  &trans   &SC_O    &SC_PM   &trans
-&bt BT_CLR      &SC_A       &SC_S       &SC_D   &trans  &trans  &SC_H   &trans  &trans   &trans   &SC_DOT  &SC_RR
-&bt BT_CLR_ALL  &kp GRAVE   &trans      &SC_X   &SC_C   &SC_V   &SC_LB  &SC_RB  &SC_LFT  &SC_DWN  &SC_UP   &SC_RGT
-                                                &M_SP   &trans  &trans  &M_SP
+&kp LA(GRAVE)  &CN_01     &CN_02  &CN_03  &CN_04  &CN_05  &CN_06  &CN_07  &CN_08   &CN_09   &CN_10   &trans
+&trans         &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans   &SC_O    &SC_PM   &trans
+&trans         &SC_A      &SC_S   &SC_D   &trans  &trans  &SC_H   &trans  &trans   &trans   &SC_DOT  &SC_RR
+&trans         &kp GRAVE  &trans  &SC_X   &SC_C   &SC_V   &SC_LB  &SC_RB  &SC_LFT  &SC_DWN  &SC_UP   &SC_RGT
+                                          &M_SP   &trans  &trans  &M_SP
             >;
         };
     };
