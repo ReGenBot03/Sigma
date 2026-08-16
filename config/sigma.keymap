@@ -388,7 +388,7 @@
 &kp F1          &kp F2      &kp F3      &kp F4  &kp F5         &kp F6           &kp F7         &kp F8         &kp F9         &kp F10            &kp F11    &kp F12
 &kp CAPS        &trans      &trans      &trans  &trans         &trans           &kp LC(LA(G))  &kp LC(LA(S))  &kp LC(LS(I))  &kp LC(LS(C))      &kp LA(E)  &trans
 &bt BT_CLR      &trans      &trans      &trans  &trans         &trans           &kp LS(F6)     &kp LS(F5)     &kp LC(M)      &kp LC(LA(LS(B)))  &trans     &kp LA(ENTER)
-&bt BT_CLR_ALL  &bt BT_PRV  &bt BT_NXT  &trans  &trans         &trans           &kp LC(LS(S))  &M_UB          &kp LEFT       &kp DOWN           &kp UP     &kp RIGHT
+&bt BT_CLR_ALL  &bt BT_PRV  &bt BT_NXT  &trans  &ind_bat       &ind_con         &kp LC(LS(S))  &M_UB          &kp LEFT       &kp DOWN           &kp UP     &kp RIGHT
                                                 &kp LG(LS(S))  &kp PRINTSCREEN  &trans         &kp RIGHT_ALT
             >;
         };
